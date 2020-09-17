@@ -61,3 +61,19 @@ Amplify generate the GraphQL code at the same time.
 
 GraphQL endpoint: https://aehskk6azvf6hhrnwpuceh2crq.appsync-api.eu-central-1.amazonaws.com/graphql
 
+### Amplify libraries
+
+Still in the root folder of the project:
+
+```sh
+  npm install aws-amplify @aws-amplify/ui-react
+```
+
+#### Set up Amplify in the project
+
+In `Index.ts`, add those lines
+```js
+  import Amplify from "aws-amplify"
+  import awsExports from "./aws-exports"
+  Amplify.configure(awsExports)
+```
