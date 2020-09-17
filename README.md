@@ -30,3 +30,14 @@ Some next steps:
 * ```amplify push``` will build all your local backend resources and provision it in the cloud
 * ```amplify console``` to open the Amplify Console and view your project status
 * ```amplify publish``` will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+### GraphQL
+
+via amplify, no renew your aad creds.
+
+Still in the root folder of the project:
+
+```sh
+  amplify add api
+```
+
