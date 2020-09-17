@@ -77,3 +77,15 @@ In `Index.ts`, add those lines
   import awsExports from "./aws-exports"
   Amplify.configure(awsExports)
 ```
+
+## Set up authentication in the Front End
+
+In `App.tsx`, add the lines
+```js
+  import { withAuthenticator } from '@aws-amplify/ui-react'
+  export const AuthApp = withAuthenticator(App)
+```
+
+`<App />` will be the component to be displayed once the user has been authenticated.
+
+

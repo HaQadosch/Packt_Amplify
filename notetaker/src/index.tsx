@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import App from './App'
+import { AuthApp } from './App'
 import * as serviceWorker from './serviceWorker'
 
 import Amplify from "aws-amplify"
@@ -10,7 +10,7 @@ Amplify.configure(awsExports)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthApp />
   </React.StrictMode>,
   document.getElementById('root')
 )

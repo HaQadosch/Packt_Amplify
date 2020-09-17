@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
+import { withAuthenticator } from '@aws-amplify/ui-react'
 
-function App() {
+export function App() {
   return (
     <main>
       Hello
     </main>
-  );
+  )
 }
 
-export default App;
+export const AuthApp = withAuthenticator(App)
