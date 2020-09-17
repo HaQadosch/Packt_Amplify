@@ -1,12 +1,13 @@
 import React from 'react'
-import { withAuthenticator } from '@aws-amplify/ui-react'
+import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
 export function App() {
   return (
-    <main>
-      Hello
+    <AmplifyAuthenticator>
+      <main>
+        <AmplifySignOut />
+        Hello
     </main>
+    </AmplifyAuthenticator>
   )
 }
-
-export const AuthApp = withAuthenticator(App)
