@@ -22,7 +22,7 @@ In the root project folder:
   amplify init
 ```
 
-# Amplify Note
+#### Amplify Note
 
 Some next steps:
 * ```amplify status``` will show you what you've added already and if it's locally configured or deployed
@@ -40,4 +40,24 @@ Still in the root folder of the project:
 ```sh
   amplify add api
 ```
+
+From the CLI :
+* add the AppSync GraphQL service
+* set the auth via cognito user pool
+
+#### Amplify Note
+
+Some next steps:
+* ```amplify push``` will build all your local backend resources and provision it in the cloud
+* ```amplify publish``` will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+
+We add the new config into the cloud
+```sh
+  amplify push
+```
+
+Amplify generate the GraphQL code at the same time.
+
+GraphQL endpoint: https://aehskk6azvf6hhrnwpuceh2crq.appsync-api.eu-central-1.amazonaws.com/graphql
 
