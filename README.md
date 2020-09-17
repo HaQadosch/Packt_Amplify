@@ -82,8 +82,18 @@ In `Index.ts`, add those lines
 
 In `App.tsx`, add the lines
 ```js
-  import { withAuthenticator } from '@aws-amplify/ui-react'
-  export const AuthApp = withAuthenticator(App)
+import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
+export function App() {
+  return (
+    <AmplifyAuthenticator>
+      <main>
+        <AmplifySignOut />
+        Hello
+      </main>
+    </AmplifyAuthenticator>
+  )
+}
 ```
 
 `<App />` will be the component to be displayed once the user has been authenticated.
