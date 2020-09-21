@@ -99,3 +99,71 @@ export function App() {
 `<App />` will be the component to be displayed once the user has been authenticated.
 
 
+# Test Auth Demo
+
+1. Create Snowpack App
+2. Amplify init
+3. Configure React to work with Amplify
+4. Amplify add Auth
+5. Add React components
+
+## 1 Create Snowpack App
+Create front-end project scaffold:
+```js
+  npx create-snowpack-app auth_test --template @snowpack/app-template-react-typescript
+```
+
+Check everything is ok
+```zsh
+  cd auth_test
+  npm test
+  npm start
+```
+
+## 2 Initialise Amplify
+
+We initialize the amplify project from the rood folder of tbe project
+```zsh
+  amplify init
+```
+
+We then answer a series of questions:
+```
+Note: It is recommended to run this command from the root of your app directory
+? Enter a name for the project xbauthtest
+? Enter a name for the environment dev
+? Choose your default editor: Visual Studio Code
+? Choose the type of app that you're building javascript
+Please tell us about your project
+? What javascript framework are you using react
+? Source Directory Path:  src
+? Distribution Directory Path: build
+? Build Command:  npm run build
+? Start Command: npm run start
+Using default provider  awscloudformation
+
+Pro tip:
+Try "amplify add api" to create a backend API and then "amplify publish" to deploy everything
+```
+
+This will create a `amplify` folder and a `aws-export.js` file.
+All the services definition (Infrastructure templates) will be added in the `amplify/backend/<service>`
+The configuration are added in `aws-export.js`
+
+The template project will also be added in the cloud: `amplify console`
+
+## Configure React to work with Amplify
+
+In the root folder of the project
+```zsh
+  npm install aws-amplify @aws-amplify/ui-react
+```
+
+In `index.tsx`
+```javascript
+  import Amplify from "aws-amplify";
+  import awsExports from "./aws-exports";
+  Amplify.configure(awsExports);
+```
+
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/username/repository)
