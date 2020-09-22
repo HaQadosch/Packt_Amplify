@@ -153,6 +153,13 @@ The configuration are added in `aws-export.js`
 
 The template project will also be added in the cloud: `amplify console`
 
+### Deploy button
+
+In the readme of the project, not the one at the roof folder,
+```md
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/XavierBrinonECS/test)
+```
+
 ## Configure React to work with Amplify
 
 In the root folder of the project
@@ -166,5 +173,3 @@ In `index.tsx`
   import awsExports from "./aws-exports";
   Amplify.configure(awsExports);
 ```
-
-[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/XavierBrinonECS/test)
