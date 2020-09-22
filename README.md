@@ -107,10 +107,10 @@ export function App() {
 4. Amplify add Auth
 5. Add React components
 
-## 1 Create Snowpack App
+## 1 Create React App
 Create front-end project scaffold:
 ```js
-  npx create-snowpack-app auth_test --template @snowpack/app-template-react-typescript
+  npx create-react-app auth_test --template typescript
 ```
 
 Check everything is ok
@@ -166,4 +166,4 @@ In `index.tsx`
   Amplify.configure(awsExports);
 ```
 
-[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/HaQadosch/Packt_Amplify/tree/master/notetaker)
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/HaQadosch/test)
