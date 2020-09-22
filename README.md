@@ -167,4 +167,4 @@ In `index.tsx`
   Amplify.configure(awsExports);
 ```
 
-[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/HaQadosch/test)
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/XavierBrinonECS/test)
