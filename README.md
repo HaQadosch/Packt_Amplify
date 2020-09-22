@@ -173,3 +173,32 @@ In `index.tsx`
   import awsExports from "./aws-exports";
   Amplify.configure(awsExports);
 ```
+
+## Add auth service
+
+In the root folder
+```zsh
+  amplify add auth
+```
+
+We answer the series of questions
+```
+ Do you want to use the default authentication and security configuration? Default configuration
+ Warning: you will not be able to edit these selections. 
+ How do you want users to be able to sign in? Email
+ Do you want to configure advanced settings? No, I am done.
+Successfully added auth resource authtest8a5b81e2 locally
+
+Some next steps:
+"amplify push" will build all your local backend resources and provision it in the cloud
+"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+```
+
+And we push that config in the cloud:
+```zsh
+  amplify push
+```
+
+The folder `/Packt_Amplify/auth_test/amplify/backend/auth` has been created and with it the cloudformation config. 
+

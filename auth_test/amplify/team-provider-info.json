@@ -10,6 +10,11 @@
       "StackName": "amplify-authtest-dev-204607",
       "StackId": "arn:aws:cloudformation:eu-central-1:088417944319:stack/amplify-authtest-dev-204607/43190710-fd0c-11ea-85a9-06247d577dba",
       "AmplifyAppId": "d2pzhonlz167i6"
+    },
+    "categories": {
+      "auth": {
+        "authtest8a5b81e2": {}
+      }
     }
   }
 }
