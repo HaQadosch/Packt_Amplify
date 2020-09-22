@@ -122,8 +122,9 @@ Check everything is ok
 
 ## 2 Initialise Amplify
 
-We initialize the amplify project from the rood folder of tbe project
+We initialize the amplify project from the root folder of tbe project
 ```zsh
+  aada login -n --profile aad 
   amplify init
 ```
 
